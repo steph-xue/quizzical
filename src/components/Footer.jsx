@@ -10,7 +10,7 @@ function Footer(props) {
             {
                 !props.showAnswers &&
                 <div className="footer-container1"> 
-                    <button className="btn btn-black btn-submit" onClick={props.checkAnswers}>Check answers</button>
+                    <button className="btn btn-black btn-check-answers" onClick={props.checkAnswers}>Check answers</button>
                 </div>
             }
 
@@ -19,7 +19,7 @@ function Footer(props) {
                 props.showAnswers &&
                 <div className="footer-container2">
                     <p className="score">You scored {props.score} / {props.questions.length} correct answers</p>
-                    <button className="btn btn-black btn-submit" onClick={props.playAgain}>Play Again</button>
+                    <button className="btn btn-black btn-play-again" onClick={props.playAgain}>Play Again</button>
                 </div>
             }
             
