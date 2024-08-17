@@ -165,7 +165,7 @@ function App() {
       {
         ((start && !showAnswers) || (!start && showAnswers)) &&
         <div className="questions-page">
-            <div className="spacing"></div>
+            <div className="line-spacing"></div>
             {questionElements}
             <Footer 
                 showAnswers={showAnswers}
