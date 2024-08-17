@@ -87,7 +87,6 @@ body {
   margin-bottom: 20px;
 }
 
-
 @media only screen and (max-width: 1200px) {
   .description {
     font-size: 1rem;
@@ -184,14 +183,14 @@ body {
   padding-right: 25%;
   padding-top: 2%;
 }
+/* .................................. */
 
 @media only screen and (max-width: 1200px), only screen and (max-height: 750px) {
   .questions-page {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
   }
 }
 
