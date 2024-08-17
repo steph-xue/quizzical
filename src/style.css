@@ -23,7 +23,7 @@ body {
 
 @media only screen and (max-width: 1200px) {
   body {
-    background-size: 30vw 15vh; 
+    background-size: 15vw 10vh; 
   }
 }
 
@@ -174,13 +174,14 @@ body {
   height: 100vh;
   width: 100vw;
   padding-left: 25%;
+  padding-right: 25%;
   padding-top: 2%;
-  border: #000000 1px solid;
 }
 
 @media only screen and (max-width: 1200px) {
   .questions-page {
-    padding-left: 15%
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -220,6 +221,12 @@ body {
   width: 50vw;
 }
 
+@media only screen and (max-width: 1200px) {
+  .answers {
+    width: 90vw;
+  }
+}
+
 input[type="radio"] {
 	display: none;
 }
@@ -233,7 +240,7 @@ input[type="radio"] {
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  min-width: 10px;
+  min-width: 100px;
   max-width: 200px;
   padding: 10px 20px;
   margin: 5px;
@@ -242,8 +249,8 @@ input[type="radio"] {
 .grey-button {
   background-color: #d9d9d9;
   border-radius: 15px;
-  min-width: 5vw;
-  max-width: 12vw;
+  min-width: 100px;
+  max-width: 200px;
 }
 
 .button-correct {
@@ -256,7 +263,7 @@ input[type="radio"] {
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  min-width: 10px;
+  min-width: 100px;
   max-width: 200px;
   padding: 10px 20px;
   margin: 5px;
@@ -272,7 +279,7 @@ input[type="radio"] {
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  min-width: 10px;
+  min-width: 100px;
   max-width: 200px;
   padding: 10px 20px;
   margin: 5px;
@@ -287,7 +294,7 @@ input[type="radio"] {
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  min-width: 10px;
+  min-width: 100px;
   max-width: 200px;
   padding: 10px 20px;
   margin: 5px;
@@ -355,7 +362,7 @@ input[type="radio"] {
 
 @media only screen and (max-width: 1200px) {
   .line {
-    width: 70vw;
+    width: 90vw;
   }
 }
 
@@ -391,6 +398,7 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-left: 30%;
   }
 }
 
