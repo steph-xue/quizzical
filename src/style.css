@@ -23,7 +23,7 @@ body {
 
 @media only screen and (max-width: 1000px) {
   body {
-    background-size: 20%, 20%; /* Reduce the size of the background images on small screens */
+    background-size: 20%, 20%;
   }
 }
 
@@ -58,6 +58,12 @@ body {
   padding-top: 300px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .cover-page {
+    padding-top: 200px;
+  }
+}
+
 .description {
   font-size: 1.2rem;
   font-weight: 400;
@@ -66,6 +72,12 @@ body {
   max-width: 500px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .description {
+    font-size: 0.8rem;
+  }
 }
 
 .btn-start {
