@@ -10,6 +10,9 @@ body {
   color: #000000;
   display: flex;
   justify-content: center;
+  background-image: url("/images/blob1.png"), url("/images/blob2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0, 0% 100%;
 }
 
 .cover-page {
