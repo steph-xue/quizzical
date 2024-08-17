@@ -69,7 +69,7 @@ body {
   font-weight: 400;
   line-height: 30px;
   text-align: center;
-  max-width: 56vh;
+  width: 56vh;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -78,7 +78,7 @@ body {
 @media only screen and (max-width: 1200px) {
   .description {
     font-size: 1rem;
-    max-width: 80vh;
+    width: 40vh;
   }
 }
 
