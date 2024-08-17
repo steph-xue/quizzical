@@ -1,6 +1,8 @@
 import React from 'react'
 
 function Cover(props) {
+
+    // Render the Cover component
     return (
         <div className="cover-page">
             <div className="content">
