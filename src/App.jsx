@@ -18,14 +18,44 @@ function App() {
   // Create state for the score (number of correct answers)
   const [score, setScore] = React.useState(0);
 
+  // Set difficulty levels as easy, medium, and hard
+  const difficultyLevels = ["easy", "medium", "hard"];
+
+  // Create state for the choosen difficulty level (default is medium)
+  const [selectedDifficulty, setSelectedDifficulty] = React.useState("medium");
+
+  // Set the following categories options
+  const categoryOptions = [
+    { index: "", type: "All" },
+    { index: 9, type: "General Knowledge" },
+    { index: 12, type: "Music" },
+    { index: 17, type: "Science & Nature" },
+    { index: 22, type: "Geography" },
+    { index: 23, type: "History" },
+    { index: 26, type: "Celebrities" },
+    { index: 27, type: "Animals" },
+    { index: 31, type: "Anime & Manga" }
+  ]
+
+  // Create state for the choosen category (default is all)
+  const [selectedCategory, setSelectedCategory] = React.useState({ index: "", type: "All" });
+
+  // Create state for error message
   const [errorMessage, setErrorMessage] = React.useState("");
 
-  // Fetch random questions from the API when the quiz is started
+  // Fetch random questions from the API when the quiz is started based on the selected category and difficulty level
+  // Handle errors if the fetch operation fails
   React.useEffect(() => {
     if (start) {
       async function getQuestions() {
         try {
-          const res = await fetch("https://opentdb.com/api.php?amount=5&difficulty=medium");
+
+          let res;
+          if (selectedCategory.index === "") {
+              res = await fetch(`https://opentdb.com/api.php?amount=10&difficulty=${selectedDifficulty}`);
+          } else {
+              res = await fetch(`https://opentdb.com/api.php?amount=10&category=${selectedCategory}&difficulty=${selectedDifficulty}`);
+          }
           
           if (!res.ok) {
             throw new Error('Network response was not ok');
@@ -119,7 +149,16 @@ function App() {
       {/* Render the Cover component if the quiz has not been started */}
       {
         (!start && !showAnswers) &&
-        <Cover setStart={setStart} errorMessage={errorMessage}/>
+        <Cover 
+          setStart={setStart} 
+          categoryOptions={categoryOptions}
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          difficultyLevels={difficultyLevels}
+          selectedDifficulty={selectedDifficulty}
+          setSelectedDifficulty={setSelectedDifficulty}
+          errorMessage={errorMessage}
+        />
       }
   
       {/* Render the questions if the quiz has been started */}

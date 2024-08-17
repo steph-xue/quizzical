@@ -7,7 +7,7 @@
   font-size: 7rem;
   font-weight: 700;
   position: absolute;
-  transform: translate(-50%, -120%);
+  transform: translate(-50%, -100%);
 }
 
 .content h1:nth-child(1) {

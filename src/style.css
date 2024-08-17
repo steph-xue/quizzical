@@ -45,10 +45,10 @@ body {
 .cover-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
+  padding-top: 350px;
 }
 
 .description {
@@ -57,13 +57,28 @@ body {
   line-height: 30px;
   text-align: center;
   max-width: 500px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn-start {
   font-size: 1.2rem;
   height: 60px;
   width: 200px;
+}
+
+.difficulty-level {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.category-options {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .error-message {
