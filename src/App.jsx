@@ -18,24 +18,43 @@ function App() {
   // Create state for the score (number of correct answers)
   const [score, setScore] = React.useState(0);
 
+  const [errorMessage, setErrorMessage] = React.useState("");
+
   // Fetch random questions from the API when the quiz is started
   React.useEffect(() => {
     if (start) {
-      fetch('https://opentdb.com/api.php?amount=5&difficulty=medium')
-        .then(response => response.json())
-        .then(data => {
-          if (data !== null && data !== undefined) {
-            setQuestions(data.results.map(question => {
-              return {
-                  ...question,
-                  id: nanoid(),
-                  playerAnswer: ""
-              };
-            }));
+      async function getQuestions() {
+        try {
+          const res = await fetch("https://opentdb.com/api.php?amount=5&difficulty=medium");
+          
+          if (!res.ok) {
+            throw new Error('Network response was not ok');
+            setErrorMessage("Error: Please retry again");
+            setStart(false);
           }
-      })
+  
+          const data = await res.json();
+  
+          if (!data.results || !Array.isArray(data.results)) {
+            throw new Error('Unexpected data structure');
+            setErrorMessage("Error: Please retry again");
+            setStart(false);
+          }
+  
+          setQuestions(data.results.map(question => ({
+            ...question,
+            id: nanoid(),
+            playerAnswer: ""
+          })));
+        } catch (error) {
+          console.error('There was a problem with the fetch operation:', error);
+          setErrorMessage("Error: Please retry again");
+          setStart(false);
+        }
+      }
+      getQuestions();
     }
-  },[start])
+  }, [start]);
 
   // Function to save the player's selected answer
   function handleAnswerSelect(questionId, answer) {
@@ -53,6 +72,7 @@ function App() {
     setShowAnswers(true);
     setStart(false);
     calculateScore();
+    setErrorMessage("");
   }
 
   function calculateScore() {
@@ -99,7 +119,7 @@ function App() {
       {/* Render the Cover component if the quiz has not been started */}
       {
         (!start && !showAnswers) &&
-        <Cover setStart={setStart} />
+        <Cover setStart={setStart} errorMessage={errorMessage}/>
       }
   
       {/* Render the questions if the quiz has been started */}

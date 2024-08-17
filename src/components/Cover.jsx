@@ -11,6 +11,7 @@ function Cover(props) {
             </div>
             <p className="description">Test your knowledge in a trivia game across various categories from geography to pop culture! Play solo or with friends to see who can outsmart each other!</p>
             <button className="btn btn-black btn-start" onClick={() => props.setStart(true)}>Start quiz</button>
+            <p className="error-message">{props.errorMessage}</p>
         </div>
     );
 }

@@ -66,6 +66,13 @@ body {
   width: 200px;
 }
 
+.error-message {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #bc6b6b;
+  padding-top: 30px;
+} 
+
 .questions-page {
   display: flex;
   flex-direction: column;
