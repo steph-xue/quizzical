@@ -23,7 +23,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   body {
-    background-size: 50%, 50%; /* Reduce the size of the background images on small screens */
+    background-size: 20%, 20%; /* Reduce the size of the background images on small screens */
   }
 }
 
