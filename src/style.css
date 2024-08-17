@@ -18,6 +18,14 @@ body {
   background-image: url("/images/blob1.png"), url("/images/blob2.png");
   background-repeat: no-repeat;
   background-position: 100% 0, 0% 100%;
+  background-size: auto; 
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: 50%, 50%; /* Reduce the size of the background images on small screens */
+    background-position: 90% 0, 10% 100%; /* Adjust the position if needed */
+  }
 }
 
 .cover-page, .questions-page {
