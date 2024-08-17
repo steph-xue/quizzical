@@ -325,47 +325,7 @@ input[type="radio"] {
   margin: 5px;
 }
 
-@media only screen and (max-width: 750px), only screen and (max-height: 750px) {
-  .button-group label {
-    font-size: 0.5rem;
-    min-width: 50px;
-    max-width: 100px;
-    padding: 5px 10px;
-    margin: 2px;
-  }
 
-  .grey-button {
-    font-size: 0.5rem;
-    min-width: 50px;
-    max-width: 100px;
-    padding: 5px 10px;
-    margin: 2px;
-  }
-
-  .button-correct {
-    font-size: 0.5rem;
-    min-width: 50px;
-    max-width: 100px;
-    padding: 5px 10px;
-    margin: 2px;
-  }
-
-  .button-incorrect {
-    font-size: 0.5rem;
-    min-width: 50px;
-    max-width: 100px;
-    padding: 5px 10px;
-    margin: 2px;
-  }
-
-  .button-faded {
-    font-size: 0.5rem;
-    min-width: 50px;
-    max-width: 100px;
-    padding: 5px 10px;
-    margin: 2px;
-  }
-}
 
 .unchecked-answers {
   display: flex;
@@ -385,6 +345,12 @@ input[type="radio"] {
 @media only screen and (max-width: 1200px) {
   .checked-answers {
     width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .checked-answers {
+    flex-wrap: wrap;
   }
 }
 
