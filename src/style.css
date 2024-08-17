@@ -39,13 +39,6 @@ body {
   }
 }
 
-main {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-
 .btn-black {
   background-color: #000000;
   color: white;
@@ -190,6 +183,7 @@ main {
   padding-right: 25%;
   padding-top: 2%;
 }
+
 /* .................................. */
 
 @media only screen and (max-width: 1200px), only screen and (max-height: 750px) {
@@ -197,6 +191,11 @@ main {
     padding-left: 10%;
     padding-right: 10%;
   }
+}
+
+.spacing {
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .question-container {

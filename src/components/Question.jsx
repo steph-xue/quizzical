@@ -87,6 +87,7 @@ function Question(props) {
     // Render the Question component
     return (
         <div className="question-container">
+            <div className="spacing"></div>
 
             {/* Render the question */}
             <h2 className="question">{decode(props.question)}</h2>
