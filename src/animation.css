@@ -85,3 +85,40 @@
       }
     }
   }
+
+  @media only screen and (max-height: 750px) {
+    .content h1 {
+      font-size: 4rem; /* Smaller font size for shorter screens */
+    }
+  
+    @keyframes animate {
+      0%,
+      100% {
+        clip-path: polygon(
+          0% 50%, /* Adjusted values to make the animation smaller */
+          18% 48%,
+          36% 53%,
+          55% 57%,
+          72% 58%,
+          88% 56%,
+          100% 53%,
+          100% 100%,
+          0% 100%
+        );
+      }
+  
+      50% {
+        clip-path: polygon(
+          0% 65%,
+          16% 68%,
+          33% 68%,
+          50% 64%,
+          68% 57%,
+          84% 53%,
+          100% 54%,
+          100% 100%,
+          0% 100%
+        );
+      }
+    }
+  }
