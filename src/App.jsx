@@ -1,5 +1,6 @@
 import React from 'react'
 import {nanoid} from 'nanoid'
+import Confetti from 'react-confetti'
 import Cover from './components/Cover.jsx'
 import Question from './components/Question.jsx'
 import Footer from './components/Footer.jsx'
@@ -93,6 +94,7 @@ function App() {
   // Render the App component
   return (
     <main>
+      {showAnswers && <Confetti />}
 
       {/* Render the Cover component if the quiz has not been started */}
       {

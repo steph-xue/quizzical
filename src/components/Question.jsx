@@ -82,17 +82,40 @@ function Question(props) {
         }
     });
 
+    const result = props.playerAnswer === props.correctAnswer ? <p className="correct">Correct!</p> : <p className="incorrect">Incorrect!</p>
+
     // Render the Question component
     return (
         <div className="question-container">
-            <h2 className="question">{decode(props.question)}</h2>
-            <div className="answers">
-                
-                {/* Render the answers (unchecked) */}
-                {!props.showAnswers && allAnswerElements}
 
-                {/* Render the checked answers if the player is checking their answers */}
-                {props.showAnswers && checkedAllAnswerElements}
+            {/* Render the question */}
+            <h2 className="question">{decode(props.question)}</h2>
+
+
+            {/* Render the answers */}
+            <div className="answers">
+
+                {/* If playing quiz, show unchecked answers */}
+                {
+                    !props.showAnswers && 
+                    <div className="unchecked-answers">
+                        {allAnswerElements}
+                    </div>
+                }
+
+
+                {/* If the player is done the quiz, show checked answers */}
+                {
+                    props.showAnswers && 
+                    <div className="checked-answers">
+                        <div className="options">
+                            {checkedAllAnswerElements}
+                        </div>
+                        <div className="result">
+                            {result}
+                        </div>
+                    </div>
+                }
             </div>
             <div className="line"></div>
         </div>
