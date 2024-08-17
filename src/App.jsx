@@ -23,13 +23,15 @@ function App() {
       fetch('https://opentdb.com/api.php?amount=5&difficulty=medium')
         .then(response => response.json())
         .then(data => {
-          setQuestions(data.results.map(question => {
-            return {
-                ...question,
-                id: nanoid(),
-                playerAnswer: ""
-            };
-        }));
+          if (data !== null && data !== undefined) {
+            setQuestions(data.results.map(question => {
+              return {
+                  ...question,
+                  id: nanoid(),
+                  playerAnswer: ""
+              };
+            }));
+          }
       })
     }
   },[start])
@@ -71,23 +73,21 @@ function App() {
   }
 
   // Map over and create a Question component for each question
-  let questionElements = [];
-  if (questions != undefined) {
-    questionElements = questions.map(question => {
-      return (
-        <Question
-          key={question.id}
-          id={question.id}
-          question={question.question}
-          correctAnswer={question.correct_answer}
-          incorrectAnswers={question.incorrect_answers}
-          playerAnswer={question.playerAnswer}
-          showAnswers={showAnswers}
-          handleAnswerSelect={handleAnswerSelect}
-        />
-      );
-    });
-  }
+  const questionElements = questions.map(question => {
+    return (
+      <Question
+        key={question.id}
+        id={question.id}
+        question={question.question}
+        correctAnswer={question.correct_answer}
+        incorrectAnswers={question.incorrect_answers}
+        playerAnswer={question.playerAnswer}
+        showAnswers={showAnswers}
+        handleAnswerSelect={handleAnswerSelect}
+      />
+    );
+  });
+  
 
 
   // Render the App component

@@ -27,10 +27,16 @@ function Question(props) {
     // Create an array of answer elements to render
     const allAnswerElements = shuffledAllAnswers.map(answer => {
         const id = nanoid();
+
+        // If the player's answer is selected, render the selected answer as grey
+        let selectedClass = "";
+        if (props.playerAnswer === answer) {
+            selectedClass = "grey-button"
+        }
         return (
             <div key={id} className="button-group">
-                <input type="radio" id={id} name={`answer-${props.id}`} value={answer} />
-                <label onSelect={() => props.handleAnswerSelect(props.id, answer)} htmlFor={id}>{decode(answer)}</label>
+                <input type="radio" id={id} name={`answer-${props.id}`} value={answer} onClick={() => props.handleAnswerSelect(props.id, answer)} />
+                <label className={`${selectedClass}`}htmlFor={id}>{decode(answer)}</label>
             </div>
         );
     });
@@ -48,6 +54,14 @@ function Question(props) {
                 </div>
             );
         
+        // If the player's answer is incorrect, render the other correct answer as 'correct'
+        } else if (props.playerAnswer !== answer && answer === props.correctAnswer) {
+            return (
+                <div key={id} className="button-correct">
+                    <input type="radio" id={id} name={`answer-${props.id}`} value={answer} disabled checked />
+                    <label htmlFor={id}>{decode(answer)}</label>
+                </div>
+            );
         // If the player's answer is incorrect, render the incorrect answer as checked 'incorrect'
         } else if (props.playerAnswer === answer && props.incorrectAnswers.includes(answer)) {
             return (
