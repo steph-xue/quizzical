@@ -23,7 +23,7 @@ body {
 
 @media only screen and (max-width: 1200px) {
   body {
-    background-size: 30vw 20vh; 
+    background-size: 30vw 15vh; 
   }
 }
 
@@ -145,17 +145,17 @@ body {
   margin-bottom: 40px;
 }
 
-@media only screen and (max-height: 750px) {
-  .category-options {
-    font-size: 0.8rem;
-    margin-top: 3px;
-    margin-bottom: 10px;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   .category-options {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .category-options {
+    font-size: 0.8rem !important;
+    margin-top: 3px;
+    margin-bottom: 10px;
   }
 }
 
