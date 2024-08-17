@@ -110,26 +110,91 @@ main {
   display: inline-block;
   cursor: pointer;
   text-align: center;
-  min-width: 90px;
-  max-width: 200px;
+  min-width: 5vw;
+  max-width: 12vw;
   padding: 10px 20px;
   margin: 5px;
 }
 
 .button-group input[type="radio"]:checked + label {
-  background-color: #d9d9d9;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
   color: black;
-  border: none;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 5vw;
+  max-width: 12vw;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #d9d9d9;
 }
 
-fieldset {
-  border: 0;
-  display: flex;
+
+.button-correct {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  background-color: #94D7A2;
+  border: none;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 5vw;
+  max-width: 12vw;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.button-incorrect {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  color: #9a9999;
+  background-color: #F8BCBC;
+  border: none;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 5vw;
+  max-width: 12vw;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.button-faded {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  color: #9a9999;
+  border: 1px solid #9a9999;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 5vw;
+  max-width: 12vw;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.button-corrent input[type="radio"] {
+  display: none;
+}
+
+.button-incorrect input[type="radio"] {
+  display: none;
+}
+
+.button-faded input[type="radio"] {
+  display: none;
 }
 
 .line {
   border: 1.3px solid #d3d3d3;
-  width: 48vw;
+  width: 50vw;
 }
 
 .footer {
