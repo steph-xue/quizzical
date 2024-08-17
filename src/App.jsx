@@ -1,5 +1,6 @@
 import React from 'react'
 import Cover from './components/Cover.jsx'
+import Question from './components/Question.jsx'
 
 function App() {
 
@@ -10,17 +11,18 @@ function App() {
     <main>
       {
         (!start && !showAnswers) &&
-        <Cover />
+        <Cover
+            setStart={setStart} 
+        />
       }
 
       {
         ((start && !showAnswers) || (!start && showAnswers)) &&
-        <div>
-          <h2>Question 1</h2>
-          <p>What is the capital of France?</p>
-          <p>Answers</p>
-          <div className="line"></div>
-          <button onClick={() => setShowAnswers(true)}>Check answers</button>
+        <div className="questions-page">
+          <Question />
+          <Question />
+          <Question />
+          <button className="btn btn-black btn-check">Check answers</button>
         </div>
       }
     </main>
