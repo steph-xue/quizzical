@@ -198,11 +198,26 @@ main {
 }
 
 .footer {
-  align-self: flex-start;
-  padding-left: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50vw;
+}
+
+.footer-container1 {
+  align-self: center;
+}
+
+.footer-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.score {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .btn-submit {
