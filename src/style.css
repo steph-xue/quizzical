@@ -6,8 +6,8 @@ body {
   margin: 0;
   background-color: #F5F7FB;
   padding: 20px;
-  font-family: 'Alegreya', sans-serif;
-  color: #293264;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
   display: flex;
   justify-content: center;
 }
@@ -19,19 +19,11 @@ body {
   align-items: center;
   height: 100vh;
 }
-.title {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 37px;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 40px;
-}
 
 .description {
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 37px;
+  line-height: 30px;
   text-align: center;
   max-width: 500px;
   margin-bottom: 40px;
@@ -43,13 +35,13 @@ body {
   width: 200px;
 }
 
-.btn-blue {
-  background-color: #4D5B9E;
+.btn-black {
+  background-color: #000000;
   color: white;
   border-radius: 15px;
 }
 
-.btn-blue:hover {
-  background-color: #29315a;
+.btn-black:hover {
+  background-color: #4d4d4d;
   color: white;
 }
