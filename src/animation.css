@@ -51,7 +51,7 @@
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 3000px) {
     .content h1 {
       font-size: 4rem; /* Smaller font size for mobile */
     }
