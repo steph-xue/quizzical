@@ -55,12 +55,12 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  padding-top: 300px;
+  padding-top: 30vh;
 }
 
 @media only screen and (max-width: 2800px) {
   .cover-page {
-    padding-top: 220px;
+    padding-top: 30vh;
   }
 }
 
