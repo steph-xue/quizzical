@@ -165,6 +165,8 @@ function App() {
       {
         ((start && !showAnswers) || (!start && showAnswers)) &&
         <div className="questions-page">
+            <img src="/images/blob1.png" alt="blob" className="blob1" />
+            <img src="/images/blob2.png" alt="blob" className="blob2" />
             {questionElements}
             <Footer 
                 showAnswers={showAnswers}

@@ -10,6 +10,8 @@ function Cover(props) {
     // Render the Cover component
     return (
         <div className="cover-page">
+            <img src="/images/blob1.png" alt="blob" className="blob1" />
+            <img src="/images/blob2.png" alt="blob" className="blob2" />
 
             {/* Renders the animated title */}
             <div className="content">

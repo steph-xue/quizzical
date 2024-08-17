@@ -15,26 +15,41 @@ body {
   color: #000000;
   display: flex;
   justify-content: center;
-  background-image: url("/images/blob1.png"), url("/images/blob2.png");
-  background-repeat: no-repeat;
-  background-position: 100% 0, 0% 100%;
-  background-size: 20vw 30vh; 
+}
+
+.blob1 {
+  position: absolute;
+  top: 0;
+  left: 80vw;
+  width: 20%;
+  height: 30%;
+}
+
+.blob2 {
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  width: 20%;
+  height: 30%;
 }
 
 @media only screen and (max-width: 1200px) {
-  body {
-    background-size: 15vw 10vh; 
+  .blob1, .blob2 {
+    top: 80vh;
+    left: 0;
+    width: 15vw;
+    height: 10vh;
   }
 }
 
 @media only screen and (max-height: 750px) {
-  body {
+  .blob1, .blob2 {
     background-size: 20vw 40vh; 
   }
 }
 
 @media only screen and (max-height: 750px) and (max-width: 1200px){
-  body {
+  .blob1, .blob2 {
     background-size: 15vw 10vh; 
   }
 }
