@@ -88,7 +88,7 @@
 
   @media only screen and (max-height: 750px) {
     .content h1 {
-      font-size: 4rem; /* Smaller font size for shorter screens */
+      font-size: 3rem; /* Smaller font size for shorter screens */
     }
   
     @keyframes animate {

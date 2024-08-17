@@ -90,7 +90,7 @@ body {
 
 @media only screen and (max-height: 750px) {
   .description {
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 90%;
   }
 }
@@ -122,11 +122,27 @@ body {
   }
 }
 
+@media only screen and (max-height: 750px) {
+  .difficulty-level {
+    font-size: 0.8rem;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+}
+
 .category-options {
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+@media only screen and (max-height: 750px) {
+  .category-options {
+    font-size: 0.8rem;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
