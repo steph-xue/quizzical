@@ -51,13 +51,13 @@ function App() {
         ((start && !showAnswers) || (!start && showAnswers)) &&
         <div className="questions-page">
           {questionElements}
-          <div>
-            <button className="btn btn-black btn-check" onClick={() => setShowAnswers(true)}>Check answers</button>
+          <div className="footer">
+            <button className="btn btn-black btn-submit">Check answers</button>
           </div>
         </div>
       }
-    </main>
+      </main>
   );
 }
 
-export default App
+export default App;
