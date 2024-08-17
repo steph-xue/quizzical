@@ -18,18 +18,18 @@ body {
   background-image: url("/images/blob1.png"), url("/images/blob2.png");
   background-repeat: no-repeat;
   background-position: 100% 0, 0% 100%;
-  background-size: auto; 
+  background-size: 20vw 30vh; 
 }
 
 @media only screen and (max-width: 1200px) {
   body {
-    background-size: 20%, 20%;
+    background-size: 30vw 20vh; 
   }
 }
 
 @media only screen and (max-height: 750px) {
   body {
-    background-size: 25vh, 25vh;
+    background-size: 20vw 40vh; 
   }
 }
 
