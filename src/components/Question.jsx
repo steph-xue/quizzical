@@ -1,17 +1,21 @@
 import React from 'react'
-import {decode} from 'html-entities';
+import {decode} from 'html-entities'
+import {nanoid} from 'nanoid'
 
 function Question(props) {
 
     const allAnswers = [...props.incorrectAnswers, props.correctAnswer]
     console.log(props.incorrectAnswers)
 
-    const allAnswerElements = allAnswers.map(answer => (
-        <div class="button-group">
-            <input type="radio" id="{answer}" name="answer" />
-            <label for="{answer}">{decode(answer)}</label>
-        </div>
-    ));
+    const allAnswerElements = allAnswers.map((answer) => {
+        const id = nanoid();
+        return (
+            <div key={id} className="button-group">
+                <input type="radio" id="{id}" name="answer" />
+                <label htmlFor="{id}">{decode(answer)}</label>
+            </div>
+        );
+    });
 
     return (
         <div className="question-container">

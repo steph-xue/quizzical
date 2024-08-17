@@ -1,4 +1,5 @@
 import React from 'react'
+import {nanoid} from 'nanoid'
 import Cover from './components/Cover.jsx'
 import Question from './components/Question.jsx'
 
@@ -18,15 +19,23 @@ function App() {
     }
   }, [start]);
 
-  const questionElements = questions.map((question, index) => (
-    <Question
-      key={index}
-      question={question.question}
-      correctAnswer={question.correct_answer}
-      incorrectAnswers={question.incorrect_answers}
-      showAnswers={showAnswers}
-    />
-  ));
+  let questionElements = null;
+  if (questions != undefined) {
+    questionElements = questions.map((question, index) => {
+
+      const id = nanoid();
+
+      return (
+        <Question
+          key={id}
+          question={question.question}
+          correctAnswer={question.correct_answer}
+          incorrectAnswers={question.incorrect_answers}
+          showAnswers={showAnswers}
+        />
+      );
+    });
+  }
 
 
   return (
@@ -42,7 +51,9 @@ function App() {
         ((start && !showAnswers) || (!start && showAnswers)) &&
         <div className="questions-page">
           {questionElements}
-          <button className="btn btn-black btn-check">Check answers</button>
+          <div>
+            <button className="btn btn-black btn-check" onClick={() => setShowAnswers(true)}>Check answers</button>
+          </div>
         </div>
       }
     </main>

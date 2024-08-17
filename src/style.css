@@ -83,7 +83,7 @@ main {
 }
 
 .question {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 20px;
   max-width: 90%;
@@ -92,7 +92,7 @@ main {
 .answers {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: end;
   gap: 15px;
   margin-bottom: 10px;
 }
@@ -111,6 +111,7 @@ main {
   cursor: pointer;
   text-align: center;
   min-width: 90px;
+  max-width: 200px;
   padding: 10px 20px;
   margin: 5px;
 }
@@ -128,5 +129,5 @@ fieldset {
 
 .line {
   border: 1.3px solid #d3d3d3;
-  width: 50vw;
+  width: 48vw;
 }
