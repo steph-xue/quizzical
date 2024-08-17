@@ -87,6 +87,14 @@ body {
   width: 200px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .btn-start {
+    font-size: 0.8rem;
+    height: 60px;
+    width: 150px;
+  }
+}
+
 .difficulty-level {
   font-size: 1.2rem;
   font-weight: 500;
@@ -94,11 +102,23 @@ body {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .difficulty-level {
+    font-size: 1rem;
+  }
+}
+
 .category-options {
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .category-options {
+    font-size: 1rem;
+  }
 }
 
 .error-message {
