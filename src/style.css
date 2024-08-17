@@ -33,6 +33,12 @@ body {
   }
 }
 
+@media only screen and (max-height: 750px) and (max-width: 1200px){
+  body {
+    background-size: 15vw 10vh; 
+  }
+}
+
 .cover-page, .questions-page {
   flex-grow: 1;
 }
@@ -189,6 +195,17 @@ body {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-height: 750px) {
+  .question-container {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .question-container {
+    margin-bottom: 0px;
+  }
+}
 
 .question {
   font-size: 1rem;
@@ -204,9 +221,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .question {
+    font-size: 0.6rem;
+    width: 70vw;
+  }
+}
+
 @media only screen and (max-height: 750px) {
   .question {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     width: 80vw;
   }
 }
@@ -300,6 +324,48 @@ input[type="radio"] {
   margin: 5px;
 }
 
+@media only screen and (max-width: 750px), only screen and (max-height: 750px) {
+  .button-group label {
+    font-size: 0.5rem;
+    min-width: 50px;
+    max-width: 100px;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+
+  .grey-button {
+    font-size: 0.5rem;
+    min-width: 50px;
+    max-width: 100px;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+
+  .button-correct {
+    font-size: 0.5rem;
+    min-width: 50px;
+    max-width: 100px;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+
+  .button-incorrect {
+    font-size: 0.5rem;
+    min-width: 50px;
+    max-width: 100px;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+
+  .button-faded {
+    font-size: 0.5rem;
+    min-width: 50px;
+    max-width: 100px;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+}
+
 .unchecked-answers {
   display: flex;
   justify-content: flex-start;
@@ -329,7 +395,7 @@ input[type="radio"] {
 
 @media only screen and (max-width: 1200px) {
   .options {
-    margin-right: 10vw;
+    width: 80vw;
   }
 }
 
@@ -340,6 +406,12 @@ input[type="radio"] {
 @media only screen and (max-width: 1200px) {
   .result > p {
     font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 750px), only screen and (max-height: 750px) {
+  .result > p {
+    font-size: 0.6rem;
   }
 }
 
@@ -417,6 +489,22 @@ input[type="radio"] {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .score {
+    font-size: 0.8rem;
+    padding-top: 15%;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .score {
+    font-size: 0.8rem;
+    padding-top: 10%;
+    width: 150px;
+  }
+}
+
 .btn-check-answers, .btn-play-again {
   font-size: 1rem;
   height: 60px;
@@ -430,11 +518,44 @@ input[type="radio"] {
 @media only screen and (max-width: 1200px) {
   .btn-check-answers {
     width: 150px;
-    margin-left: 0;
+    margin-left: 40%;
   }
 
   .btn-play-again {
-    width: 100px;
+    width: 150px;
     margin-left: 0; 
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .btn-check-answers {
+    font-size: 0.8rem;
+    height: 50px;
+    width: 150px;
+    margin-top: 20%;
+  }
+
+  .btn-play-again {
+    font-size: 0.8rem;
+    height: 50px;
+    width: 130px;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .btn-check-answers {
+    font-size: 0.8rem;
+    height: 40px;
+    width: 150px;
+    margin-top: 10%;
+  }
+
+  .btn-play-again {
+    font-size: 0.8rem;
+    height: 50px;
+    width: 130px;
+    margin-top: 5%;
   }
 }
