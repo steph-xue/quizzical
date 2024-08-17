@@ -21,7 +21,7 @@ body {
   background-size: auto; 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 3000px) {
   body {
     background-size: 20%, 20%;
   }
@@ -58,9 +58,9 @@ body {
   padding-top: 300px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 3000px) {
   .cover-page {
-    padding-top: 250px;
+    padding-top: 220px;
   }
 }
 
@@ -74,7 +74,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 3000px) {
   .description {
     font-size: 1rem;
     max-width: 40vh;
