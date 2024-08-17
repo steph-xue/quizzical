@@ -15,11 +15,6 @@ body {
   color: #000000;
   display: flex;
   justify-content: center;
-}
-
-.cover-page, .questions-page {
-  flex-grow: 1;
-  overflow: scroll;
   background-image: url("/images/blob1.png"), url("/images/blob2.png");
   background-repeat: no-repeat;
   background-position: 100% 0, 0% 100%;
@@ -27,19 +22,19 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-  .cover-page, .questions-page {
+  body {
     background-size: 15vw 10vh; 
   }
 }
 
 @media only screen and (max-height: 750px) {
-  .cover-page, .questions-page {
+  body {
     background-size: 20vw 40vh; 
   }
 }
 
 @media only screen and (max-height: 750px) and (max-width: 1200px){
-  .cover-page, .questions-page {
+  body {
     background-size: 15vw 10vh; 
   }
 }
@@ -60,6 +55,11 @@ body {
   transform: scale(0.95);
   background-color: #4d4d4d!important;
   color: white!important;
+}
+
+.cover-page, .questions-page {
+  flex-grow: 1;
+  overflow: scroll;
 }
 
 .cover-page {
@@ -185,10 +185,12 @@ body {
   padding-top: 2%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px), only screen and (max-height: 750px) {
   .questions-page {
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%
   }
 }
 
