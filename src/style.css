@@ -27,6 +27,12 @@ body {
   }
 }
 
+@media only screen and (max-height: 1000px) {
+  body {
+    background-size: 20%, 20%;
+  }
+}
+
 .cover-page, .questions-page {
   flex-grow: 1;
 }
