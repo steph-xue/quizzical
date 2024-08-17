@@ -21,8 +21,8 @@ function App() {
   // Set difficulty levels as easy, medium, and hard
   const difficultyLevels = ["easy", "medium", "hard"];
 
-  // Create state for the choosen difficulty level (default is medium)
-  const [selectedDifficulty, setSelectedDifficulty] = React.useState("medium");
+  // Create state for the choosen difficulty level (default is easy)
+  const [selectedDifficulty, setSelectedDifficulty] = React.useState("easy");
 
   // Set the following categories options
   const categoryOptions = [
@@ -52,9 +52,9 @@ function App() {
 
           let res;
           if (selectedCategory.index === "") {
-              res = await fetch(`https://opentdb.com/api.php?amount=10&difficulty=${selectedDifficulty}`);
+              res = await fetch(`https://opentdb.com/api.php?amount=5&difficulty=${selectedDifficulty}`);
           } else {
-              res = await fetch(`https://opentdb.com/api.php?amount=10&category=${selectedCategory}&difficulty=${selectedDifficulty}`);
+              res = await fetch(`https://opentdb.com/api.php?amount=5&category=${selectedCategory}&difficulty=${selectedDifficulty}`);
           }
           
           if (!res.ok) {
@@ -118,7 +118,7 @@ function App() {
   // Function to restart the game
   function playAgain() {
     setShowAnswers(false);
-    setStart(true); 
+    setErrorMessage("");
     setScore(0);
     setQuestions([]);
   }
