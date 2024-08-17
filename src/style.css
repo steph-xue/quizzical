@@ -493,6 +493,7 @@ input[type="radio"] {
   .score {
     font-size: 0.8rem;
     padding-top: 15%;
+    min-width: 150px;
     width: 150px;
   }
 }
@@ -500,7 +501,7 @@ input[type="radio"] {
 @media only screen and (max-height: 750px) {
   .score {
     font-size: 0.8rem;
-    padding-top: 10%;
+    padding-top: 5%;
     width: 150px;
   }
 }
@@ -518,7 +519,7 @@ input[type="radio"] {
 @media only screen and (max-width: 1200px) {
   .btn-check-answers {
     width: 150px;
-    margin-left: 40%;
+    margin-left: 30%;
   }
 
   .btn-play-again {
@@ -540,6 +541,7 @@ input[type="radio"] {
     font-size: 0.8rem;
     height: 50px;
     width: 130px;
+    min-width: 130px;
     margin-top: 10%;
   }
 }
@@ -556,6 +558,6 @@ input[type="radio"] {
     font-size: 0.8rem;
     height: 50px;
     width: 130px;
-    margin-top: 5%;
+    margin-top: 2%;
   }
 }
