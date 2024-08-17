@@ -30,6 +30,7 @@ main {
   background-color: #000000;
   color: white;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .btn-black:hover {
@@ -78,7 +79,7 @@ main {
 }
 
 .question-container {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .question {
@@ -86,6 +87,43 @@ main {
   font-weight: 500;
   margin-bottom: 20px;
   max-width: 90%;
+}
+
+.answers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.button-group input[type="radio"] {
+  display: none;
+}
+
+.button-group label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: black;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 90px;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.button-group input[type="radio"]:checked + label {
+  background-color: #D6DBF5;
+  color: black;
+  border: none;
+}
+
+fieldset {
+  border: 0;
+  display: flex;
 }
 
 .line {

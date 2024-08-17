@@ -7,13 +7,18 @@ function Question(props) {
     console.log(props.incorrectAnswers)
 
     const allAnswerElements = allAnswers.map(answer => (
-        <input type="radio" name="answer" value={answer} />
+        <div class="button-group">
+            <input type="radio" id="{answer}" name="answer" />
+            <label for="{answer}">{decode(answer)}</label>
+        </div>
     ));
 
     return (
         <div className="question-container">
             <h2 className="question">{decode(props.question)}</h2>
-            {allAnswerElements}
+            <div className="answers">
+                {allAnswerElements}
+            </div>
             <div className="line"></div>
         </div>
     );
