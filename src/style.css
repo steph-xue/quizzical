@@ -175,18 +175,16 @@ body {
 .questions-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: start;
   height: 100vh;
   width: 100vw;
   padding-left: 25%;
   padding-right: 25%;
-  padding-top: 2%;
+  padding-top: 5%;
 }
 
-/* .................................. */
-
-@media only screen and (max-width: 1200px), only screen and (max-height: 750px) {
+@media only screen and (max-width: 1200px) {
   .questions-page {
     padding-left: 10%;
     padding-right: 10%;
@@ -317,6 +315,7 @@ input[type="radio"] {
 @media only screen and (max-width: 1200px) {
   .checked-answers {
     width: 90vw;
+    flex-direction: column;
   }
 }
 
@@ -329,6 +328,7 @@ input[type="radio"] {
 @media only screen and (max-width: 1200px) {
   .options {
     width: 80vw;
+    align-self: flex-start;
   }
 }
 
@@ -336,10 +336,11 @@ input[type="radio"] {
   align-self: flex-end;
 }
 
-@media only screen and (max-width: 1200px), only screen and (max-height: 750px) {
-  .result > p {
-    font-size: 0.8rem;
-    
+@media only screen and (max-width: 1200px) {
+  .result {
+    align-self: flex-start !important;
+    margin-left: 1%;
+    margin-top: 1%;
   }
 }
 
@@ -358,13 +359,11 @@ input[type="radio"] {
 .line {
   border: 1.3px solid #d3d3d3;
   width: 50vw;
-  min-width: 50vw;
 }
 
 @media only screen and (max-width: 1200px) {
   .line {
     width: 90vw;
-    min-width: 90vw;
   }
 }
 
@@ -413,26 +412,9 @@ input[type="radio"] {
 
 @media only screen and (max-width: 1200px) {
   .score {
-    font-size: 0.8rem;
     padding-top: 0;
     width: 150px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .score {
-    font-size: 0.8rem;
-    padding-top: 15%;
-    min-width: 150px;
-    width: 150px;
-  }
-}
-
-@media only screen and (max-height: 750px) {
-  .score {
-    font-size: 0.8rem;
-    padding-top: 5%;
-    width: 150px;
+    margin-top: 0;
   }
 }
 
@@ -449,7 +431,7 @@ input[type="radio"] {
 @media only screen and (max-width: 1200px) {
   .btn-check-answers {
     width: 150px;
-    margin-left: 30%;
+    margin-left: 50%;
   }
 
   .btn-play-again {
@@ -464,7 +446,7 @@ input[type="radio"] {
     font-size: 0.8rem;
     height: 50px;
     width: 150px;
-    margin-top: 20%;
+    margin-top: 0;
   }
 
   .btn-play-again {
@@ -472,22 +454,7 @@ input[type="radio"] {
     height: 50px;
     width: 130px;
     min-width: 130px;
-    margin-top: 10%;
+    margin-top: -10px;
   }
 }
 
-@media only screen and (max-height: 750px) {
-  .btn-check-answers {
-    font-size: 0.8rem;
-    height: 40px;
-    width: 150px;
-    margin-top: 10%;
-  }
-
-  .btn-play-again {
-    font-size: 0.8rem;
-    height: 50px;
-    width: 130px;
-    margin-top: 2%;
-  }
-}
