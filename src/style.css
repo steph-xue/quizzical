@@ -320,12 +320,6 @@ input[type="radio"] {
   }
 }
 
-@media only screen and (max-width: 750px) {
-  .checked-answers {
-    flex-wrap: wrap;
-  }
-}
-
 .options {
   display: flex; 
   gap: 10px; 
@@ -342,15 +336,10 @@ input[type="radio"] {
   align-self: flex-end;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px), only screen and (max-height: 750px) {
   .result > p {
     font-size: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 750px), only screen and (max-height: 750px) {
-  .result > p {
-    font-size: 0.8rem;
+    
   }
 }
 
@@ -369,11 +358,13 @@ input[type="radio"] {
 .line {
   border: 1.3px solid #d3d3d3;
   width: 50vw;
+  min-width: 50vw;
 }
 
 @media only screen and (max-width: 1200px) {
   .line {
     width: 90vw;
+    min-width: 90vw;
   }
 }
 
