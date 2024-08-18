@@ -9,9 +9,11 @@ Can access on: https://quizzical-sx.netlify.app/
 ## Here are the features of the game:
 
 **Start Page**
+  - The player can choose their desired level of difficulty of quiz questions and a category of questions and click start to begin the quiz
 <br><br>
 ![Start Page](./images/start-page.png?raw=true "Start Page")
-On the start page, the player can choose their desired level of difficulty of quiz questions and a category of questions and click start to begin the quiz.
+The start page includes the selection of difficulties and categories of quetions.
+<br><br>
 <br><br>
 
 **Difficulty of Questions**
@@ -23,6 +25,7 @@ On the start page, the player can choose their desired level of difficulty of qu
 
 ![Difficulties](./images/difficulties.png?raw=true "Difficulties")
 The player can choose their desired level of questions from the following: easy, medium, hard.
+<br><br>
 <br><br>
 
 **Category of Questions**
@@ -40,11 +43,13 @@ The player can choose their desired level of questions from the following: easy,
 ![Categories](./images/categories.png?raw=true "Categories")
 The player can choose their desired category of questions ranging from geography to pop culture.
 <br><br>
+<br><br>
 
 **Quiz Game**
 <br><br>
 ![Questions](./images/questions.png?raw=true "Questions")
 The quiz will generate a random array of questions based on the difficulty and category of questions choosen.
+<br><br>
 <br><br>
 
 **Checking the Answers**
