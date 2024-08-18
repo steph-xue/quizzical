@@ -1,31 +1,42 @@
 # Quizzical
 
-The quizzical project is a dynamic web application built using the front-end JavaScript library, React, which generates random quiz questions for the player to answer. The player can choose their desired level of quiz questions (easy, medium, hard) and a category of questions (wide selection from geography to pop culture). They can then click 'start game' and the web application will generate a random set of 5 questions for the player to answer. These questions will either be in multiple choice or true/false format. After the player is done answering the questions, they can click on the 'check answers' button and the quiz will calculate their total score and display which questions the player had answered correctly and incorrectly. The Open Trivia Database API was used to retrieve an array of random questions from their database.
+The quizzical project is a dynamic web application built using the front-end JavaScript library, React, which generates random quiz questions for the player to answer. The player can choose their desired level of difficulty of quiz questions (easy, medium, hard) and a category of questions (wide selection from geography to pop culture). They can then click 'start game' and the web application will generate a random set of 5 questions for the player to answer. These questions will either be in multiple choice or true/false format. After the player is done answering the questions, they can click on the 'check answers' button and the quiz will calculate their total score and display which questions the player had answered correctly and incorrectly. The Open Trivia Database API was used to retrieve an array of random quiz questions from their database depending on the type of difficulty and category of questions selected.
 &nbsp;
 
 Can access on: https://quizzical-sx.netlify.app/
 <br><br>
 
 ## Here are the features of the game:
-**Game Mechanics**
-  - The objective of the game is to roll the dice as fast as possible until all dice are the same to achieve a 
-  - The player can then click on the roll button to re-roll the unheld dice
+**Difficulty of Questions**
+  - The player can choose the difficulty of questions generated:
+    - Easy
+    - Medium
+    - Hard
 &nbsp;
 
-**Timer**
-  - When a new game is started, the timer will start and record the time until a tenzies win is achieved
-  - The timer is displayed dynamically on the game and is updated every 10 milliseconds
-&nbsp;
+**Category of Questions**
+  - The player can their desired category of questions:
+    - All
+    - General Knowledge
+    - Music
+    - Science & Nature
+    - Geography
+    - History
+    - Celebrities
+    - Animals
+    - Anime & Manga
 
 <br><br>
+
 ![Start Page](./images/start-page.png?raw=true "Start Page")
-Text
+On the start page, the player can choose their desired level of difficulty of quiz questions and a category of questions and click start to begin the quiz.
+
 <br><br>
 ![Difficulties](./images/difficulties.png?raw=true "Difficulties")
-Text
+The player can choose their desired level of easy, medium, hard)
 <br><br>
 ![Categories](./images/categories.png?raw=true "Categories")
-Text
+Text(wide selection from geography to pop culture)
 <br><br>
 ![Questions](./images/questions.png?raw=true "Questions")
 Text
