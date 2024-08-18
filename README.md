@@ -8,10 +8,7 @@ Can access on: https://quizzical-sx.netlify.app/
 
 ## Here are the features of the game:
 **Game Mechanics**
-  - The objective of the game is to roll the dice as fast as possible until all dice are the same to achieve a tenzies win and the player who gets all dice on the same number and yells "Tenzi!" the fastest is the winner
-  - You can play against other people or play against yourself and try to beat your own best time
-  - When a new game is started, a random set of 10 dice will be generated
-  - Each die can be clicked on to hold the die it at its current value between rolls (highlighted in a darker color)
+  - The objective of the game is to roll the dice as fast as possible until all dice are the same to achieve a 
   - The player can then click on the roll button to re-roll the unheld dice
 &nbsp;
 
