@@ -206,7 +206,7 @@ body {
 
 @media only screen and (max-width: 1200px) {
   .question {
-    width: 90vw;
+    width: 80vw;
   }
 }
 
@@ -316,7 +316,7 @@ input[type="radio"] {
 
 @media only screen and (max-width: 1200px) {
   .checked-answers {
-    width: 100vw;
+    width: 90vw;
   }
 }
 
@@ -350,7 +350,7 @@ input[type="radio"] {
 
 @media only screen and (max-width: 750px), only screen and (max-height: 750px) {
   .result > p {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -368,13 +368,6 @@ input[type="radio"] {
 
 .line {
   border: 1.3px solid #d3d3d3;
-  width: 50vw;
-}
-
-.line-spacing {
-  border: 1.3px solid #d3d3d3;
-  margin-top: 10%;
-  margin-bottom: 5%;
   width: 50vw;
 }
 
