@@ -25,7 +25,6 @@ Can access on: https://quizzical-sx.netlify.app/
     - Celebrities
     - Animals
     - Anime & Manga
-
 <br><br>
 
 ![Start Page](./images/start-page.png?raw=true "Start Page")
@@ -33,18 +32,21 @@ On the start page, the player can choose their desired level of difficulty of qu
 
 <br><br>
 ![Difficulties](./images/difficulties.png?raw=true "Difficulties")
-The player can choose their desired level of easy, medium, hard)
+The player can choose their desired level of questions from the following: easy, medium, hard.
+
 <br><br>
 ![Categories](./images/categories.png?raw=true "Categories")
-Text(wide selection from geography to pop culture)
+The player can choose their desired category of questions ranging from geography to pop culture.
+
 <br><br>
 ![Questions](./images/questions.png?raw=true "Questions")
-Text
+The quiz will generate a random array of questions based on the difficulty and category of questions choosen.
+
 <br><br>
 ![Check Answers](./images/check-answers.png?raw=true "Check Answers")
-Text
-<br><br>
+After the player is done answering the questions, they can click on the 'check answers' button and the quiz will calculate their total score and display which questions the player had answered correctly and incorrectly.
 
+<br><br>
 ## Languages & Frameworks
 - The react info project was created using React, a front-end JavaScript web libary
   - React uses JSX, which is an XML-like extension to the JavaScript language that lets you write HTML-like markup inside a JavaScript file
