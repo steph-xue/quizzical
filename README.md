@@ -10,7 +10,7 @@ Can access on: https://quizzical-sx.netlify.app/
 <br><br>
 
 **Start Page**
-&nbsp;
+<br><br>
 ![Start Page](./images/start-page.png?raw=true "Start Page")
 On the start page, the player can choose their desired level of difficulty of quiz questions and a category of questions and click start to begin the quiz.
 <br><br>
@@ -20,7 +20,7 @@ On the start page, the player can choose their desired level of difficulty of qu
     - Easy
     - Medium
     - Hard
-&nbsp;
+<br><br>
 ![Difficulties](./images/difficulties.png?raw=true "Difficulties")
 The player can choose their desired level of questions from the following: easy, medium, hard.
 <br><br>
@@ -36,17 +36,19 @@ The player can choose their desired level of questions from the following: easy,
     - Celebrities
     - Animals
     - Anime & Manga
-&nbsp;  
+<br><br>
 ![Categories](./images/categories.png?raw=true "Categories")
 The player can choose their desired category of questions ranging from geography to pop culture.
 <br><br>
 
 **Quiz Game**
+<br><br>
 ![Questions](./images/questions.png?raw=true "Questions")
 The quiz will generate a random array of questions based on the difficulty and category of questions choosen.
 <br><br>
 
 **Checking the Answers**
+<br><br>
 ![Check Answers](./images/check-answers.png?raw=true "Check Answers")
 After the player is done answering the questions, they can click on the 'check answers' button and the quiz will calculate their total score and display which questions the player had answered correctly and incorrectly.
 <br><br>
