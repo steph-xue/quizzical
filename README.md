@@ -30,7 +30,7 @@ Text
 ![Questions](./images/questions.png?raw=true "Questions")
 Text
 <br><br>
-![Check Answers](./images/check-answeres.png?raw=true "Check Answers")
+![Check Answers](./images/check-answers.png?raw=true "Check Answers")
 Text
 <br><br>
 
