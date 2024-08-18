@@ -7,7 +7,6 @@ Can access on: https://quizzical-sx.netlify.app/
 <br><br>
 
 ## Here are the features of the game:
-<br><br>
 
 **Start Page**
 <br><br>
@@ -21,6 +20,7 @@ On the start page, the player can choose their desired level of difficulty of qu
     - Medium
     - Hard
 <br><br>
+
 ![Difficulties](./images/difficulties.png?raw=true "Difficulties")
 The player can choose their desired level of questions from the following: easy, medium, hard.
 <br><br>
