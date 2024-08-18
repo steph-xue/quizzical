@@ -59,7 +59,7 @@ A random list of 5 questions will be generated based on the difficulty and categ
    - The result for each question will be displayed as 'correct' or 'incorrect' 
    - Answers that the player got wrong will have the button marked in red
    - Answers that the player got right will have the button marked in green
-   - If the player got the answer wrong, the actual correct answer button will also be marked in green
+   - If the player got the answer wrong, the actual correct answer button will be marked in a lighter green
  -  The quiz will calculate their total score out of the total of quiz questions (out of 5)
 <br><br>
 ![Check](./images/check.png?raw=true "Check")
