@@ -1,6 +1,6 @@
 # Quizzical
 
-The quizzical project is a dynamic web application built using the front-end JavaScript library, React. The player can choose their desired level of quiz questions (easy, medium, hard) and a category of questions that includes a wide selection from geography to pop culture. They can then click 'start game' and the web application will then generate a random set of 5 questions for the player to answer. These questions will be in either multiple choice or true and false format. After the player is done answering the questions, they can click on the 'check answers' button
+The quizzical project is a dynamic web application built using the front-end JavaScript library, React, which generates random quiz questions for the player to answer. The player can choose their desired level of quiz questions (easy, medium, hard) and a category of questions (wide selection from geography to pop culture). They can then click 'start game' and the web application will generate a random set of 5 questions for the player to answer. These questions will either be in multiple choice or true/false format. After the player is done answering the questions, they can click on the 'check answers' button and the quiz will calculate their total score and display which questions the player had answered correctly and incorrectly. The Open Trivia Database API was used to retrieve an array of random questions from their database.
 &nbsp;
 
 Can access on: https://quizzical-sx.netlify.app/
@@ -41,8 +41,8 @@ Text
   - Vite is a local development server that has support for frameworks like React and Vue.js, and programming languages like JavaScript and TypeScript 
 
 ## Databases/APIs 
-  - Open trivia database
-    - The open trivia database provides a completely free JSON API for use in programming projects
+  - Open Trivia Aatabase
+    - The Open Trivia Database provides a completely free JSON API for use in programming projects
     - Generates an API url by specifying the number of questions, category of questions, difficulty of questions, type of questions, and type of encoding
     - More information can be found at: https://opentdb.com/api_config.php
       
