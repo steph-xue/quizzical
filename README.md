@@ -7,12 +7,23 @@ Can access on: https://quizzical-sx.netlify.app/
 <br><br>
 
 ## Here are the features of the game:
+<br><br>
+
+**Start Page**
+&nbsp;
+![Start Page](./images/start-page.png?raw=true "Start Page")
+On the start page, the player can choose their desired level of difficulty of quiz questions and a category of questions and click start to begin the quiz.
+<br><br>
+
 **Difficulty of Questions**
   - The player can choose the difficulty of questions generated:
     - Easy
     - Medium
     - Hard
 &nbsp;
+![Difficulties](./images/difficulties.png?raw=true "Difficulties")
+The player can choose their desired level of questions from the following: easy, medium, hard.
+<br><br>
 
 **Category of Questions**
   - The player can their desired category of questions:
@@ -25,28 +36,21 @@ Can access on: https://quizzical-sx.netlify.app/
     - Celebrities
     - Animals
     - Anime & Manga
-<br><br>
-
-![Start Page](./images/start-page.png?raw=true "Start Page")
-On the start page, the player can choose their desired level of difficulty of quiz questions and a category of questions and click start to begin the quiz.
-
-<br><br>
-![Difficulties](./images/difficulties.png?raw=true "Difficulties")
-The player can choose their desired level of questions from the following: easy, medium, hard.
-
-<br><br>
+&nbsp;  
 ![Categories](./images/categories.png?raw=true "Categories")
 The player can choose their desired category of questions ranging from geography to pop culture.
-
 <br><br>
+
+**Quiz Game**
 ![Questions](./images/questions.png?raw=true "Questions")
 The quiz will generate a random array of questions based on the difficulty and category of questions choosen.
-
 <br><br>
+
+**Checking the Answers**
 ![Check Answers](./images/check-answers.png?raw=true "Check Answers")
 After the player is done answering the questions, they can click on the 'check answers' button and the quiz will calculate their total score and display which questions the player had answered correctly and incorrectly.
-
 <br><br>
+
 ## Languages & Frameworks
 - The react info project was created using React, a front-end JavaScript web libary
   - React uses JSX, which is an XML-like extension to the JavaScript language that lets you write HTML-like markup inside a JavaScript file
