@@ -57,7 +57,7 @@ function Question(props) {
         // If the player's answer is incorrect, render the other correct answer as 'correct'
         } else if (props.playerAnswer !== answer && answer === props.correctAnswer) {
             return (
-                <div key={id} className="button-correct">
+                <div key={id} className="button-correct-light">
                     <input type="radio" id={id} name={`answer-${props.id}`} value={answer} disabled checked />
                     <label htmlFor={id}>{decode(answer)}</label>
                 </div>
