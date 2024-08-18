@@ -17,6 +17,22 @@ Can access on: https://quizzical-sx.netlify.app/
   - The timer is displayed dynamically on the game and is updated every 10 milliseconds
 &nbsp;
 
+<br><br>
+![Start Page](./images/start-page.png?raw=true "Start Page")
+Text
+<br><br>
+![Difficulties](./images/difficulties.png?raw=true "Difficulties")
+Text
+<br><br>
+![Categories](./images/categories.png?raw=true "Categories")
+Text
+<br><br>
+![Questions](./images/questions.png?raw=true "Questions")
+Text
+<br><br>
+![Check](./images/check.png?raw=true "Check")
+Text
+<br><br>
 
 ## Languages & Frameworks
 - The react info project was created using React, a front-end JavaScript web libary
