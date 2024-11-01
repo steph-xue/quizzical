@@ -62,7 +62,7 @@ A random list of 5 questions will be generated based on the difficulty and categ
    - If the player got the answer wrong, the actual correct answer button will be marked in a lighter green
  -  The quiz will calculate their total score out of the total of quiz questions (out of 5)
 <br><br>
-![Check](./images/check.png?raw=true "Check")
+![Check](./images/check-answers.png?raw=true "Check")
 The player can check their answers and score after completing the quiz.
 <br><br>
 
