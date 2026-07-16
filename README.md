@@ -7,7 +7,7 @@
 </h4>
 
 <p align="center">
-  <img src="./images/start.png?raw=true" alt="Quizzical Start Screen" width="500">
+  <img src="./images/start-page.png?raw=true" alt="Quizzical Start Page" width="500">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 
 ## Overview
 
-This project allows players to customize and complete trivia quizzes by selecting a difficulty level and category before starting. Each quiz contains five randomly generated multiple-choice or true-or-false questions covering topics such as geography, history, music, science, animals, and pop culture. It is built with React, JavaScript, HTML, and CSS and uses Vite as the build tool. The application retrieves question data from the Open Trivia Database API based on the player’s selections, decodes special characters using HTML Entities, and dynamically renders each question and answer option through reusable React components. After submitting their answers, players can review which responses were correct or incorrect, see the correct answer for missed questions, view their final score, and start a new quiz.
+This project allows players to customize each quiz by selecting a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or “All” to draw from every category). It is built with React, JavaScript, HTML, CSS, and Bootstrap, and uses Vite as the build tool. Each quiz retrieves five randomly generated multiple-choice or true-or-false questions from the Open Trivia Database API based on the selected options. HTML Entities decodes special characters in the question text, while nanoid generates a unique identifier for each question and answer. After every question has been answered, the results are checked, the final score is calculated, and a React Confetti animation is displayed when the quiz is completed.
 
 <br>
 
