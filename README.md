@@ -1,24 +1,24 @@
-# Quizzical
+<h1 align="center">
+  Quizzical
+</h1>
 
-A trivia quiz web application that lets players choose a difficulty level and category before answering a set of randomly generated trivia questions. Categories cover a broad range of topics, including geography, history, music, and pop culture, with a final score shown at the end of each quiz.
+<h4 align="center">
+  A trivia quiz web application that allows players to select a difficulty level and category before answering randomly generated trivia questions.
+</h4>
 
-**[View Live Demo](https://quizzical-sx.netlify.app/)**
+<p align="center">
+  <img src="./images/start.png?raw=true" alt="Quizzical Start Screen" width="500">
+</p>
 
-<br>
-
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [How It Works](#how-it-works)
-- [Future Improvements](#future-improvements)
-- [Getting Started](#getting-started)
+<p align="center">
+  <a href="https://quizzical-sx.netlify.app/">View Live Demo</a>
+</p>
 
 <br>
 
 ## Overview
 
-This project allows players to customize each quiz by selecting a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or “All” to draw from every category). It is built with React, JavaScript, HTML, CSS, and Bootstrap, and uses Vite as the build tool. Each quiz retrieves five randomly generated multiple-choice or true-or-false questions from the Open Trivia Database API based on the selected options. HTML Entities decodes special characters in the question text, while nanoid generates a unique identifier for each question and answer. After every question has been answered, the results are checked, the final score is calculated, and a React Confetti animation is displayed when the quiz is completed.
+This project allows players to customize and complete trivia quizzes by selecting a difficulty level and category before starting. Each quiz contains five randomly generated multiple-choice or true-or-false questions covering topics such as geography, history, music, science, animals, and pop culture. It is built with React, JavaScript, HTML, and CSS and uses Vite as the build tool. The application retrieves question data from the Open Trivia Database API based on the player’s selections, decodes special characters using HTML Entities, and dynamically renders each question and answer option through reusable React components. After submitting their answers, players can review which responses were correct or incorrect, see the correct answer for missed questions, view their final score, and start a new quiz.
 
 <br>
 
