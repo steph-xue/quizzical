@@ -7,7 +7,7 @@
 </h4>
 
 <p align="center">
-  <img src="./images/start-page.png?raw=true" alt="Quizzical Start Page" width="500">
+  <img src="./images/start-page.png?raw=true" alt="Start Page" width="500">
 </p>
 
 <p align="center">
