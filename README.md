@@ -18,7 +18,7 @@ A trivia quiz web application that lets players choose a difficulty level and ca
 
 ## Overview
 
-This project is a trivia quiz web application, where players can choose a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or "All" to draw from every category) before answering five randomly generated multiple choice or true or false questions. It is built with React, JavaScript, HTML, CSS, and Bootstrap, and bundled with Vite. Questions are retrieved from the Open Trivia Database API based on the selected difficulty and category, with HTML Entities decoding any special characters in the text and Nano ID generating a unique key for each question and answer. Once every question has been answered, checking the results tallies the final score and triggers a React Confetti animation to celebrate finishing the quiz.
+This project is a trivia quiz web application, where players can choose a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or "All" to draw from every category) before answering five randomly generated multiple choice or true or false questions retrieved from the Open Trivia Database API. It is built with React, JavaScript, HTML, CSS, and Bootstrap, and bundled with Vite. Questions are retrieved based on the selected difficulty and category, with HTML Entities decoding any special characters in the text and Nano ID generating a unique key for each question and answer. Once every question has been answered, checking the results tallies the final score and triggers a React Confetti animation to celebrate finishing the quiz.
 
 <br>
 
@@ -58,14 +58,14 @@ Players can choose a category of questions:
 <br>
 
 ### Answering Questions
-Once the quiz starts, five questions are randomly generated from the Open Trivia Database API based on the selected difficulty and category, presented as either multiple choice or true or false. Players select an answer for each question by clicking one of the available options before moving on to check their results.
+Once the quiz starts, five randomly generated questions are retrieved from the Open Trivia Database API based on the selected difficulty and category, presented as either multiple choice or true or false. Players select an answer for each question by clicking one of the available options before moving on to check their results.
 
 <p align="center"><img src="./images/questions.png?raw=true" alt="Quiz Questions" width="700"></p>
 
 <br>
 
 ### Checking Answers
-Clicking "Check answers" reveals the result of every question and calculates a final score out of five, marking correct and incorrect answers so players can see what they missed.
+Clicking "Check answers" reveals the result of every question and calculates a final score out of five. A correctly selected answer and an incorrectly selected answer are marked in green and red respectively, and if a player answered incorrectly, the actual correct answer is also marked in green so they can see what they missed. From here, players can click "Play Again" to reset the quiz and choose a new difficulty and category.
 
 <p align="center"><img src="./images/check-answers.png?raw=true" alt="Check Answers" width="700"></p>
 
