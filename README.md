@@ -18,7 +18,7 @@ A trivia quiz web application that lets players choose a difficulty level and ca
 
 ## Overview
 
-This project is a trivia quiz web application, where players can choose a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or "All" to draw from every category) before answering five randomly generated multiple choice or true or false questions retrieved from the Open Trivia Database API. It is built with React, JavaScript, HTML, CSS, and Bootstrap, and bundled with Vite. Questions are retrieved based on the selected difficulty and category, with HTML Entities decoding any special characters in the text and Nano ID generating a unique key for each question and answer. Once every question has been answered, checking the results tallies the final score and triggers a React Confetti animation to celebrate finishing the quiz.
+This project allows players to customize each quiz by selecting a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or “All” to draw from every category). It is built with React, JavaScript, HTML, CSS, and Bootstrap, and uses Vite as the build tool. Each quiz retrieves five randomly generated multiple-choice or true-or-false questions from the Open Trivia Database API based on the selected options. HTML Entities decodes special characters in the question text, while nanoid generates a unique identifier for each question and answer. After every question has been answered, the results are checked, the final score is calculated, and a React Confetti animation is displayed when the quiz is completed.
 
 <br>
 
