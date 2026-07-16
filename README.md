@@ -65,7 +65,7 @@ Once the quiz starts, five questions are randomly generated from the Open Trivia
 <br>
 
 ### Checking Answers
-Clicking "Check answers" reveals the result of every question and calculates a final score out of five. A correctly selected answer is marked in green, an incorrectly selected answer is marked in red, and if a player answered incorrectly, the actual correct answer is highlighted in a lighter green so they can see what they missed.
+Clicking "Check answers" reveals the result of every question and calculates a final score out of five, marking correct and incorrect answers so players can see what they missed.
 
 <p align="center"><img src="./images/check-answers.png?raw=true" alt="Check Answers" width="700"></p>
 
