@@ -1,6 +1,6 @@
 # Quizzical
 
-A trivia quiz web application where players choose a difficulty and category, then answer five randomly generated questions and check their score at the end. Categories span a wide range of topics, from geography and history to music and pop culture.
+A trivia quiz web application where players can choose a difficulty and category, then answer randomly generated trivia quiz questions and check their score at the end. Categories span a wide range of topics, from geography and history to music and pop culture.
 
 **[View Live Demo](https://quizzical-sx.netlify.app/)**
 
