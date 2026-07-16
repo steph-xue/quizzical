@@ -11,8 +11,8 @@ A trivia quiz web application that lets players choose a difficulty level and ca
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [How It Works](#how-it-works)
-- [Getting Started](#getting-started)
 - [Future Improvements](#future-improvements)
+- [Getting Started](#getting-started)
 
 <br>
 
@@ -88,6 +88,14 @@ The interface is built from three components: a cover component for the start pa
 
 <br>
 
+## Future Improvements
+Several enhancements are planned to extend the functionality of the application:
+- Adjustable number of questions instead of a fixed set of five
+- A countdown timer for an added challenge
+- Saving past quiz results to track performance over time
+  
+<br>
+
 ## Getting Started
 
 Follow the steps below to set up and run the application on your own machine.
@@ -123,11 +131,3 @@ npm run dev
 ```
 
 Once the server is running, open the local URL shown in the terminal to start using the application.
-
-<br>
-
-## Future Improvements
-Several enhancements are planned to extend the functionality of the application:
-- Adjustable number of questions instead of a fixed set of five
-- A countdown timer for an added challenge
-- Saving past quiz results to track performance over time
