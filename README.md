@@ -1,106 +1,133 @@
 # Quizzical
 
-The quizzical project is a dynamic web application built using the front-end JavaScript library, React, which generates random quiz questions for the player to answer. The player can choose their desired level of difficulty of quiz questions (easy, medium, hard) and a category of questions (wide selection from geography to pop culture). They can then click 'start game' and the web application will generate a random set of 5 questions for the player to answer. These questions will either be in multiple choice or true/false format. After the player is done answering the questions, they can click on the 'check answers' button and the quiz will calculate their total score and display which questions the player had answered correctly and incorrectly. The Open Trivia Database API was used to retrieve an array of random quiz questions from their database depending on the type of difficulty and category of questions selected.
+A trivia quiz web application where players choose a difficulty and category, then answer five randomly generated questions and check their score at the end. Categories span a wide range of topics, from geography and history to music and pop culture.
+
+**[View Live Demo](https://quizzical-sx.netlify.app/)**
+
 <br>
-- Managed asynchronous API requests utilizing fetch and React.js state management to ensure smooth, real-time updates to question content, integrating error handing logic to detect and manage failed API responses and network disruptions
-- Designed a responsive frontend architecture using React.js, employing reusable components for rendering questions, validating answers, and dynamically tracking user scores, ensuring efficient data flow and optimized re-renders
 
-&nbsp;
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [How It Works](#how-it-works)
+- [Getting Started](#getting-started)
+- [Future Improvements](#future-improvements)
 
-Can access on: https://quizzical-sx.netlify.app/
-<br><br>
+<br>
 
-## Here are the features of the game:
+## Overview
 
-**Start Page**
-  - The player can choose their desired level of difficulty of quiz questions and a category of questions and click start to begin the quiz
-<br><br>
-![Start Page](./images/start-page.png?raw=true "Start Page")
-The start page includes the selection of difficulties and categories of questions.
-<br><br>
-&nbsp;
+This project is a trivia quiz web application, where players can choose a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or "All" to draw from every category) before answering five randomly generated multiple choice or true or false questions. It is built with React, JavaScript, HTML, CSS, and Bootstrap, and bundled with Vite. Questions are retrieved from the Open Trivia Database API based on the selected difficulty and category, with HTML Entities decoding any special characters in the text and Nano ID generating a unique key for each question and answer. Once every question has been answered, checking the results tallies the final score and triggers a React Confetti animation to celebrate finishing the quiz.
 
-**Difficulty of Questions**
-  - The player can choose the difficulty of questions generated:
-    - Easy
-    - Medium
-    - Hard
-<br><br>
-![Difficulties](./images/difficulties.png?raw=true "Difficulties")
-The player can choose their desired level of questions from the following: easy, medium, hard.
-<br><br>
-&nbsp;
+<br>
 
-**Category of Questions**
-  - The player can choose their desired category of questions:
-    - All
-    - General Knowledge
-    - Music
-    - Science & Nature
-    - Geography
-    - History
-    - Celebrities
-    - Animals
-    - Anime & Manga
-<br><br>
-![Categories](./images/categories.png?raw=true "Categories")
-The player can choose their desired category of questions ranging from geography to pop culture.
-<br><br>
-&nbsp;
+## Features
 
-**Quiz Game**
- - The quiz will then generate a random array of 5 multiple choice or true/false questions based on the difficulty and category of questions choosen
- - The data of quiz questions is retrieved from the Open Trivia Database API 
-<br><br>
-![Questions](./images/questions.png?raw=true "Questions")
-A random list of 5 questions will be generated based on the difficulty and category of questions choosen.
-<br><br>
-&nbsp;
+### Start Page
+The start page introduces the quiz and lets the player choose a difficulty level and category before clicking "Start quiz" to begin. If a quiz fails to load, an error message appears here as well, letting the player know to try again.
 
-**Checking the Answers**
- - After the player is done answering the questions, they can click on the 'check answers' button to check which questions they got correct and incorrect
- - The quiz will then display all questions the player had answered correctly and incorrectly
-   - The result for each question will be displayed as 'correct' or 'incorrect' 
-   - Answers that the player got wrong will have the button marked in red
-   - Answers that the player got right will have the button marked in green
-   - If the player got the answer wrong, the actual correct answer button will be marked in a lighter green
- -  The quiz will calculate their total score out of the total of quiz questions (out of 5)
-<br><br>
-![Check](./images/check-answers.png?raw=true "Check")
-The player can check their answers and score after completing the quiz.
-<br><br>
+<p align="center"><img src="./images/start-page.png?raw=true" alt="Start Page" width="700"></p>
 
-## Languages & Frameworks
-- The react info project was created using React, a front-end JavaScript web libary
-  - React uses JSX, which is an XML-like extension to the JavaScript language that lets you write HTML-like markup inside a JavaScript file
-- Vite was also used as a build tool to create the web application
-  - Vite is a local development server that has support for frameworks like React and Vue.js, and programming languages like JavaScript and TypeScript 
+<br>
 
-## Databases/APIs 
-  - Open Trivia Aatabase
-    - The Open Trivia Database provides a completely free JSON API for use in programming projects
-    - Generates an API url by specifying the number of questions, category of questions, difficulty of questions, type of questions, and type of encoding
-    - More information can be found at: https://opentdb.com/api_config.php
-      
-## Dependencies 
-  - React-confetti
-    - Displays rainbow confetti that falls from the top of the page
-  - Html-entities
-    - Can encode and decode text replacing html entities to characters
-  - Nano ID
-    - A tiny, secure, URL-friendly, unique string ID generator for JavaScript
-      
-## How to Run Locally
-- Install the latest version of node.js (JavaScript runtime server)
-    - Check the version using the command
-        - ```node --version```
-- Install the latest version of npm (JavaScript package manager)
-    - Check the version using the command
-        - ```npm --version```
-- Clone the repository from github by typing in the command line
-    - HTTPS: ```git clone https://github.com/steph-xue/quizzical.git```
-    - SSH: ```git clone git@github.com:steph-xue/quizzical.git```
-- Install any dependencies by using the command
-    - ```npm install```
-- The web application can be run on your local server by typing the command
-    - ```npm run dev```
+### Selecting a Difficulty
+Players can choose a difficulty level, which determines how challenging the generated questions will be:
+- Easy
+- Medium
+- Hard
+
+<p align="center"><img src="./images/difficulties.png?raw=true" alt="Difficulty Levels" width="700"></p>
+
+<br>
+
+### Selecting a Category
+Players can choose a category of questions:
+- All
+- General Knowledge
+- Music
+- Science & Nature
+- Geography
+- History
+- Celebrities
+- Animals
+- Anime & Manga
+
+<p align="center"><img src="./images/categories.png?raw=true" alt="Categories" width="700"></p>
+
+<br>
+
+### Answering Questions
+Once the quiz starts, five questions are generated based on the selected difficulty and category, presented as either multiple choice or true or false. Players select an answer for each question by clicking one of the available options before moving on to check their results.
+
+<p align="center"><img src="./images/questions.png?raw=true" alt="Quiz Questions" width="700"></p>
+
+<br>
+
+### Checking Answers
+Clicking "Check answers" reveals the result of every question and calculates a final score out of five. A correctly selected answer is marked in green, an incorrectly selected answer is marked in red, and if a player answered incorrectly, the actual correct answer is highlighted in a lighter green so they can see what they missed.
+
+<p align="center"><img src="./images/check-answers.png?raw=true" alt="Check Answers" width="700"></p>
+
+<br>
+
+## Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Frontend | React, JavaScript, HTML, CSS, Bootstrap |
+| Libraries | React Confetti (displays the win animation),<br>HTML Entities (decodes special characters returned by the API),<br>Nano ID (generates unique question and answer ids) |
+| APIs | Open Trivia Database API (supplies the trivia questions and answers) |
+| Build Tool | Vite |
+
+<br>
+
+## How It Works
+
+The interface is built from three components: a cover component for the start page and category and difficulty selection, a question component that renders each individual quiz question, and a footer component that displays the check answers button, the score, and the play again button. Starting the quiz triggers an effect that fetches five questions from the Open Trivia Database API, built from the selected difficulty and category, with error handling in place to catch a failed network request or an unexpected response shape, both of which display a message asking the player to retry. Each returned question is given a unique id from Nano ID and stored in state, and since the API returns HTML encoded text, HTML Entities decodes the question and answer text before it is displayed. For each question, the correct answer is combined with the incorrect answers into a single array and shuffled so the options appear in a random order every time. Selecting an answer updates that specific question's entry in state without affecting the others. Clicking "Check answers" compares every selected answer against the correct one to calculate a final score out of five, and re-renders each question's answer options with one of four states: the selected answer marked correct, the selected answer marked incorrect, the correct answer highlighted if it was not selected, or faded out if it was neither selected nor correct. This also triggers a React Confetti animation to celebrate finishing the quiz. Choosing "Play Again" resets the score and question state, returning the player to the start page to select a new difficulty and category.
+
+<br>
+
+## Getting Started
+
+Follow the steps below to set up and run the application on your own machine.
+
+**Prerequisites**
+
+Make sure Node.js and npm are installed before you begin. You can check both by running the commands below, which should each print a version number.
+```bash
+node --version
+npm --version
+```
+
+**1. Clone the repository**
+
+This downloads a copy of the project to your computer and moves you into the project folder.
+```bash
+git clone https://github.com/steph-xue/quizzical.git
+cd quizzical
+```
+
+**2. Install the dependencies**
+
+This installs React and everything else the project needs to run.
+```bash
+npm install
+```
+
+**3. Start the development server**
+
+This runs the application locally with Vite.
+```bash
+npm run dev
+```
+
+Once the server is running, open the local URL shown in the terminal to start using the application.
+
+<br>
+
+## Future Improvements
+Several enhancements are planned to extend the functionality of the application:
+- Adjustable number of questions instead of a fixed set of five
+- A countdown timer for an added challenge
+- Saving past quiz results to track performance over time
