@@ -58,7 +58,7 @@ Players can choose a category of questions:
 <br>
 
 ### Answering Questions
-Once the quiz starts, five questions are generated based on the selected difficulty and category, presented as either multiple choice or true or false. Players select an answer for each question by clicking one of the available options before moving on to check their results.
+Once the quiz starts, five questions are randomly generated from the Open Trivia Database API based on the selected difficulty and category, presented as either multiple choice or true or false. Players select an answer for each question by clicking one of the available options before moving on to check their results.
 
 <p align="center"><img src="./images/questions.png?raw=true" alt="Quiz Questions" width="700"></p>
 
