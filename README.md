@@ -3,7 +3,8 @@
 </h1>
 
 <h4 align="center">
-  A trivia quiz web application that allows players to select a difficulty level and category before answering randomly generated trivia questions.
+  A trivia quiz web application that allows players to select a difficulty level <br>
+  and category before answering randomly generated trivia questions.
 </h4>
 
 <p align="center">
