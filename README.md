@@ -7,7 +7,7 @@
 </h4>
 
 <p align="center">
-  <img src="./images/start-page.png?raw=true" alt="Start Page" width="500">
+  <img src="docs/screenshots/start-page.png?raw=true" alt="Start Page" width="500">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 
 ## Overview
 
-This project allows players to customize each quiz by selecting a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or “All” to draw from every category). Built with React, JavaScript, HTML, CSS, and Bootstrap using Vite, each quiz retrieves five randomly generated multiple-choice or true-or-false questions from the Open Trivia Database API based on the selected options. HTML Entities decodes special characters in the question text, while nanoid generates a unique identifier for each question and answer. After every question has been answered, the results are checked, the final score is calculated, and a React Confetti animation is displayed when the quiz is completed.
+This project allows players to take a customized quiz after selecting a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or “All” to draw from every category). Built with React, JavaScript, HTML, CSS, and Bootstrap using Vite, each quiz retrieves five randomly generated multiple-choice or true-or-false questions from the Open Trivia Database API based on the selected options. HTML Entities decodes special characters in the question text, while nanoid generates a unique identifier for each question and answer. After every question has been answered, the results are checked, the final score is calculated, and a React Confetti animation is displayed when the quiz is completed.
 
 <br>
 
@@ -27,7 +27,7 @@ This project allows players to customize each quiz by selecting a difficulty lev
 ### Start Page
 The start page introduces the quiz and lets the player choose a difficulty level and category before clicking "Start quiz" to begin. If a quiz fails to load, an error message appears here as well, letting the player know to try again.
 
-<p align="center"><img src="./images/start-page.png?raw=true" alt="Start Page" width="700"></p>
+<p align="center"><img src="docs/screenshots/start-page.png?raw=true" alt="Start Page" width="700"></p>
 
 <br>
 
@@ -37,7 +37,7 @@ Players can choose a difficulty level, which determines how challenging the gene
 - Medium
 - Hard
 
-<p align="center"><img src="./images/difficulties.png?raw=true" alt="Difficulty Levels" width="700"></p>
+<p align="center"><img src="docs/screenshots/difficulties.png?raw=true" alt="Difficulty Levels" width="700"></p>
 
 <br>
 
@@ -53,21 +53,21 @@ Players can choose a category of questions:
 - Animals
 - Anime & Manga
 
-<p align="center"><img src="./images/categories.png?raw=true" alt="Categories" width="700"></p>
+<p align="center"><img src="docs/screenshots/categories.png?raw=true" alt="Categories" width="700"></p>
 
 <br>
 
 ### Answering Questions
 Once the quiz starts, five randomly generated questions are retrieved from the Open Trivia Database API based on the selected difficulty and category, presented as either multiple choice or true or false. Players select an answer for each question by clicking one of the available options before moving on to check their results.
 
-<p align="center"><img src="./images/questions.png?raw=true" alt="Quiz Questions" width="700"></p>
+<p align="center"><img src="docs/screenshots/questions.png?raw=true" alt="Quiz Questions" width="700"></p>
 
 <br>
 
 ### Checking Answers
 Clicking "Check answers" reveals the result of every question and calculates a final score out of five. A correctly selected answer and an incorrectly selected answer are marked in green and red respectively, and if a player answered incorrectly, the actual correct answer is also marked in green so they can see what they missed. From here, players can click "Play Again" to reset the quiz and choose a new difficulty and category.
 
-<p align="center"><img src="./images/check-answers.png?raw=true" alt="Check Answers" width="700"></p>
+<p align="center"><img src="docs/screenshots/check-answers.png?raw=true" alt="Check Answers" width="700"></p>
 
 <br>
 

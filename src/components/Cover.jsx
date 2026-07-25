@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 
 function Cover(props) {
 
@@ -57,5 +57,22 @@ function Cover(props) {
         </div>
     );
 }
+
+Cover.propTypes = {
+    selectedDifficulty: PropTypes.string.isRequired,
+    setSelectedDifficulty: PropTypes.func.isRequired,
+    difficultyLevels: PropTypes.arrayOf(PropTypes.string).isRequired,
+    selectedCategory: PropTypes.shape({
+        index: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        type: PropTypes.string
+    }).isRequired,
+    setSelectedCategory: PropTypes.func.isRequired,
+    categoryOptions: PropTypes.arrayOf(PropTypes.shape({
+        index: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+        type: PropTypes.string
+    })).isRequired,
+    setStart: PropTypes.func.isRequired,
+    errorMessage: PropTypes.string
+};
 
 export default Cover;

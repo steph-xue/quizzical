@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 
 function Footer(props) {
 
@@ -26,5 +26,13 @@ function Footer(props) {
         </div>
     );
 }
+
+Footer.propTypes = {
+    showAnswers: PropTypes.bool.isRequired,
+    checkAnswers: PropTypes.func.isRequired,
+    playAgain: PropTypes.func.isRequired,
+    score: PropTypes.number.isRequired,
+    questions: PropTypes.array.isRequired
+};
 
 export default Footer;

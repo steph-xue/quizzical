@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {decode} from 'html-entities'
 import {nanoid} from 'nanoid'
 
@@ -121,6 +122,16 @@ function Question(props) {
         </div>
     );
 }
+
+Question.propTypes = {
+    id: PropTypes.string.isRequired,
+    question: PropTypes.string.isRequired,
+    correctAnswer: PropTypes.string.isRequired,
+    incorrectAnswers: PropTypes.arrayOf(PropTypes.string).isRequired,
+    playerAnswer: PropTypes.string,
+    showAnswers: PropTypes.bool.isRequired,
+    handleAnswerSelect: PropTypes.func.isRequired
+};
 
 export default Question;
 
