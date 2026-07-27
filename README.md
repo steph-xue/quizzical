@@ -101,6 +101,8 @@ Several enhancements are planned to extend the functionality of the application:
 
 Follow the steps below to set up and run the application on your own machine.
 
+<br>
+
 **Prerequisites**
 
 Make sure Node.js and npm are installed before you begin. You can check both by running the commands below, which should each print a version number.
@@ -108,6 +110,8 @@ Make sure Node.js and npm are installed before you begin. You can check both by 
 node --version
 npm --version
 ```
+
+<br>
 
 **1. Clone the repository**
 
