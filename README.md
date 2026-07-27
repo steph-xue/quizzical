@@ -19,7 +19,7 @@
 
 ## Overview
 
-This project allows players to take a customized quiz after selecting a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or “All” to draw from every category). It is built with React, JavaScript, HTML, CSS, and Bootstrap, using Vite as the build tool and deployed on Netlify for cloud hosting. Each quiz retrieves five randomly generated multiple-choice or true-or-false questions from the Open Trivia Database API based on the selected options. HTML Entities decodes special characters in the question text, while nanoid generates a unique identifier for each question and answer. After every question has been answered, the results are checked, the final score is calculated, and a React Confetti animation is displayed when the quiz is completed.
+This project allows players to take a customized quiz after selecting a difficulty level (easy, medium, or hard) and a category (ranging from general knowledge, geography, and music to history, celebrities, animals, and anime, or “All” to draw from every category). It is built with React, JavaScript, HTML, CSS, and Bootstrap, uses Vite as the build tool, and is deployed on Netlify for cloud hosting. Each quiz retrieves five randomly generated multiple-choice or true-or-false questions from the Open Trivia Database API based on the selected options. HTML Entities decodes special characters in the question text, while nanoid generates a unique identifier for each question and answer. After every question has been answered, the results are checked, the final score is calculated, and a React Confetti animation is displayed when the quiz is completed.
 
 <br>
 
