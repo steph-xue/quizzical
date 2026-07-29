@@ -114,7 +114,7 @@ npm --version
 
 <br>
 
-**1. Clone the repository**
+**1. Clone the Repository**
 
 This downloads a copy of the project to your computer and moves you into the project folder.
 ```bash
@@ -122,14 +122,14 @@ git clone https://github.com/steph-xue/quizzical.git
 cd quizzical
 ```
 
-**2. Install the dependencies**
+**2. Install the Dependencies**
 
-This installs React and everything else the project needs to run.
+This installs all dependencies the project needs to run.
 ```bash
 npm install
 ```
 
-**3. Start the development server**
+**3. Start the Development Server**
 
 This runs the application locally with Vite.
 ```bash

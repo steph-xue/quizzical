@@ -5,6 +5,7 @@ import Cover from './components/Cover.jsx'
 import Question from './components/Question.jsx'
 import Footer from './components/Footer.jsx'
 
+// App component (root component managing quiz state and flow)
 function App() {
   // Create state for if the quiz has been started
   const [start, setStart] = React.useState(false);
@@ -47,6 +48,7 @@ function App() {
   // Handle errors if the fetch operation fails
   React.useEffect(() => {
     if (start) {
+      // Function to fetch quiz questions from the API
       async function getQuestions() {
         try {
 
@@ -105,6 +107,7 @@ function App() {
     setErrorMessage("");
   }
 
+  // Function to calculate the final score
   function calculateScore() {
     let correctAnswers = 0;
     questions.forEach(question => {

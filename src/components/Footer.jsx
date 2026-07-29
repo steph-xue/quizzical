@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 
+// Footer component (check answers button, score, and play again button)
 function Footer(props) {
 
     // Render the Footer component (scoreboard and buttons)

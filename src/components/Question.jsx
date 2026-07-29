@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {decode} from 'html-entities'
 import {nanoid} from 'nanoid'
 
+// Question component (renders an individual quiz question and its answer options)
 function Question(props) {
 
     // Create state for the shuffled answers array

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 
+// Cover component (start page for selecting difficulty and category)
 function Cover(props) {
 
     // Capitalize the first letter of each word
